@@ -17,7 +17,20 @@ input : 5
 Solution by : [@your_name](github_account_url)
 
 ```C++
-// your solution here
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i, j;
+    for (i = 0; i < 5; i++)
+    {
+        for (j = 0; j <= i; j++)
+        {
+            cout << " * ";
+        }
+        cout << "\n";
+    }
+}
 ```
 </details>
 
@@ -40,7 +53,28 @@ input : 5
 Solution by : [@your_name](github_account_url)
 
 ```C++
-// your solution here
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i = 0, j = 0;
+
+    for (i = 1; i <= 5; i++)
+    {
+        // Print spaces
+        for (j = i; j < 5; j++)
+        {
+            cout << "  ";
+        }
+        // Print star
+        for (j = 1; j <= i; j++)
+        {
+            cout << "* ";
+        }
+        // Print new line
+        cout << "\n";
+    }
+}
 ```
 </details>
 
@@ -62,7 +96,23 @@ input : 5
 Solution by : [@your_name](github_accccount_url)
 
 ```C++
-// your solution here
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i = 0, j = 0;
+
+    for (i = 1; i <= 5; i++)
+    {
+        for (j = i; j <= 5; j++)
+        {
+            cout << " *";
+        }
+
+        // Print new line
+        cout << "\n";
+    }
+}
 ```
 </details>
 
@@ -84,7 +134,32 @@ input : 5
 Solution by : [@your_name](github_account_url)
 
 ```C++
-// your solution here
+// C++ code to demonstrate star pattern
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i = 0, j = 0, k = 0, n = 5;
+    while (i < n)
+    {
+        while (k <= n - i - 2)
+        {
+            cout << " ";
+            k++;
+        }
+        k = 0;
+
+        while (j < 2 * i - 1)
+        {
+            cout << "*";
+            j++;
+        }
+        j = 0;
+        i++;
+        cout << endl;
+    }
+}
+
 ```
 </details>
 
@@ -106,7 +181,8 @@ input : 5
 Solution by : [@your_name](github_account_url)
 
 ```C++
-// your solution here
+
+
 ```
 </details>
 
