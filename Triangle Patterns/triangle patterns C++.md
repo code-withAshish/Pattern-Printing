@@ -134,32 +134,34 @@ input : 5
 Solution by : [@your_name](github_account_url)
 
 ```C++
-// C++ code to demonstrate star pattern
+
 #include <iostream>
 using namespace std;
+
 int main()
 {
-    int i = 0, j = 0, k = 0, n = 5;
-    while (i < n)
+    int n = 5;
+
+    // loop for line number of lines
+    for (int i = 1; i <= n; i++)
     {
-        while (k <= n - i - 2)
+        // loop to print leading spaces in each line
+        for (int space = 0; space <= n - i; space++)
         {
-            cout << " ";
-            k++;
+            cout << "   ";
         }
-        k = 0;
 
-        while (j < 2 * i - 1)
+        // loop to print *
+        for (int j = 1; j <= i * 2 - 1; j++)
         {
-            cout << "*";
-            j++;
+            cout << " * ";
         }
-        j = 0;
-        i++;
-        cout << endl;
+
+        cout << "\n";
     }
-}
 
+    return 0;
+}
 ```
 </details>
 
@@ -181,7 +183,38 @@ input : 5
 Solution by : [@your_name](github_account_url)
 
 ```C++
+#include <iostream>
+using namespace std;
 
+int main()
+{
+    int n = 5;
+    // loop for line number of lines
+    for (int i = 1; i <= n; i++)
+    {
+        // loop to print leading spaces in each line
+        for (int space = 0; space <= n - i; space++)
+        {
+            cout << "   ";
+        }
+        for (int j = 1; j <= i * 2 - 1; j++)
+        {
+
+            if (j == 1 || (j == i * 2 - 1))
+            {
+                cout << " * ";
+            }
+            else
+            {
+                cout << "   ";
+            }
+        }
+
+        cout << "\n";
+    }
+
+    return 0;
+}
 
 ```
 </details>
@@ -204,7 +237,38 @@ input : 6
 Solution by : [@your_name](github_account_url)
 
 ```C++
-// your solution here
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n = 5;
+    // loop for line number of lines
+    for (int i = 1; i <= n; i++)
+    {
+        // loop to print leading spaces in each line
+        for (int space = 0; space <= n - i; space++)
+        {
+            cout << "   ";
+        }
+        for (int j = 1; j <= i * 2 - 1; j++)
+        {
+
+            if (j == 1 || (j == i * 2 - 1) || j == i)
+            {
+                cout << " * ";
+            }
+            else
+            {
+                cout << "   ";
+            }
+        }
+
+        cout << "\n";
+    }
+
+    return 0;
+}
 ```
 </details>
 
@@ -226,7 +290,34 @@ input : 5
 Solution by : [@your_name](github_account_url)
 
 ```C++
-// your solution here
+
+#include <iostream>
+using namespace std; // include stdio.h
+
+int main()
+{
+    int n = 5;
+
+    // loop for line number of lines
+    for (int i = n; i >= 1; i--)
+    {
+        // loop to print leading spaces in each line
+        for (int space = n - i; space >= 1; space--)
+        {
+            cout << "   ";
+        }
+
+        // loop to print *
+        for (int j = i * 2 - 1; j >= 1; j--)
+        {
+            cout << " * ";
+        }
+
+        cout << "\n";
+    }
+
+    return 0;
+}
 ```
 </details>
 
@@ -250,7 +341,7 @@ input : 7
 Solution by : [@your_name](github_account_url)
 
 ```C++
-// your solution here
+
 ```
 </details>
 
